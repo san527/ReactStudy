@@ -12,7 +12,7 @@ class CustomerProfile extends Component {
     render() {
         return (
             <div>
-                <img src={this.props.image} alt="profile"></img>
+                <img></img>
                 <h2>
                     {this.props.name}({this.props.id})
                 </h2>
