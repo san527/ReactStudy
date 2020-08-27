@@ -35,6 +35,14 @@ class App extends Component {
         this.timer = setInterval(this.progress, 20);
         this.callApi()
             .then(res => {
+                for (let i = 0; i < res.length; i++) {
+                    if (res[i].gender === '1') {
+                        res[i].gender = '남자';
+                    } else {
+                        res[i].gender = '여자';
+                    }
+                }
+
                 this.setState({ customers: res });
             })
             .catch(err => {
