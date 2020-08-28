@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import CustomerProfile from './CustomerProfile';
-import CustomerInfo from './CustomerInfo';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
 
-const propTypes = {};
-
-const defaultProps = {};
-
 class Customer extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <TableRow>
@@ -28,8 +18,5 @@ class Customer extends Component {
         );
     }
 }
-
-Customer.propTypes = propTypes;
-Customer.defaultProps = defaultProps;
 
 export default Customer;
