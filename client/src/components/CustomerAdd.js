@@ -24,7 +24,6 @@ class CustomerAdd extends Component {
         evn.preventDefault();
         this.addCustomer().then(res => {
             console.log(res.data);
-            this.prors.stateRefresh();
         });
         this.setState({
             file: null,
