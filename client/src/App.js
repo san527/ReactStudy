@@ -36,10 +36,12 @@ class App extends Component {
     }
 
     stateRefresh = () => {
+        console.log('gg');
         this.setState({
             customers: '',
             completed: 0,
         });
+        console.log('g1');
 
         this.callApi()
             .then(res => {
